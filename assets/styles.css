@@ -8,16 +8,18 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 section {
-    padding: 50px;
+    padding: 30px;
 }
 div {
     padding: 20px;
 }
 /* Header & Nav Bar Styles */
 header {
-    padding: 80px;
+
+    padding: 40px;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
     background-image: url(../assets/sunflower-banner.jpg);
     background-size: cover;
@@ -27,36 +29,122 @@ header {
 header h1 {
     font-size: 50px;
     font-weight: bold;
-    background-color:rgba(128, 128, 128, 0.5)
+    color: white;
+    background-color:rgba(27, 14, 6, 0.658);
+    padding: 10px;
+    margin: 0;
+    border-radius: 30px;
 }
+header a {
+    text-decoration: none;
+    color: white;
+    background-color:rgba(27, 14, 6, 0.658);
+    font-weight: bold;
+    border-radius: 30px;
+    margin: 5px;
+    
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav ul li {
+    color: white;
+    margin-top: 0px;
+    list-style: none;
+    
+}
+header nav ul li a {
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 2.00vw;
+}
+header nav ul li a:hover {
+    background:rgb(228, 176, 4);
+    color: black;
+}
+/* End Nav Bar Styles */
+
 /* Hero Styles */
 .hero {
-    border: 2px solid #997cd3;
     background-image: url(../assets/sunflower-banner.jpg);
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
-    padding: 70px;
-
+    padding: 10px;
+    text-align: center;
 }
+.hero h1 {
+    font-size: 50px;
+    color: white;
+    background-color:rgba(27, 14, 6, 0.658);
+    display: inline-flex;
+    flex-wrap: wrap;
+    border-radius: 30px;
+}
+
 /* End Hero Styles */
 
+/* Section Title Styles */
+.title {  
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-right: 3px solid rgb(228, 176, 4);
+    padding-left: 20px;
+    margin-right: 20px;
+}
+/* Section Title Styles End */
+
+/* About Me Section Styles */
 .about-me {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: left;
     border: 2px solid #58f565;
 }
+.about-me img {
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 400px;
+    float: right;
+    margin-left: auto;
+}
+/* About Me Section End */
+
+/* My Work Section Styles */
 .my-work {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     border: 2px solid #2802ff;
 }
+/* My Work Section End */
+
+/* Contact Section Styles */
 .contact {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: left;
     border: 2px solid rgba(255, 0, 0, 0.533);
 }
+/* Contact Section End */
+
+/* Footer Styles */
+footer {
+    text-align: center;
+}
+/* Footer Styles End */
 
 /* Media Queries For Smaller Screens */
 
 @media screen and (max-width: 980px) {
 
-    .hero {
-   
-    }
+
 }
 
