@@ -4,7 +4,6 @@
     padding: 0;
 }
 body {
-
     font-family: Arial, Helvetica, sans-serif;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -14,22 +13,30 @@ section {
 div {
     padding: 20px;
 }
+/* Header & Nav Bar Styles */
 header {
-    padding: 20px;
+    padding: 80px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url(../assets/sunflower-banner.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    background-color:rgba(128, 128, 128, 0.5)
 }
 /* Hero Styles */
 .hero {
     border: 2px solid #997cd3;
     background-image: url(../assets/sunflower-banner.jpg);
     background-size: cover;
-    background-position: center;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    padding: 150px;
+    background-position: bottom;
+    background-attachment: fixed;
+    padding: 70px;
 
 }
 /* End Hero Styles */
@@ -48,5 +55,8 @@ header {
 
 @media screen and (max-width: 980px) {
 
+    .hero {
+   
+    }
 }
 
