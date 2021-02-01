@@ -93,8 +93,10 @@ header nav ul li a:hover {
     letter-spacing: 2px;
     text-transform: uppercase;
     border-right: 3px solid rgb(228, 176, 4);
+    border: 2px solid #58f565;
     padding-left: 20px;
-    margin-right: 20px;
+    margin-right: 50px;
+    height: fit-content;
 }
 /* Section Title Styles End */
 
@@ -117,12 +119,56 @@ header nav ul li a:hover {
 /* About Me Section End */
 
 /* My Work Section Styles */
-.my-work {
+.flex-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: row;
     border: 2px solid #2802ff;
 }
+.flex-container div {
+    width: 50%;
+    height: auto;
+}
+.flex-item, .flex-item-2, .flex-item-3, .flex-item-4, .flex-item-5 {
+    flex: 1;
+    width: 48%;
+    height: 100px;
+    border: 2px solid #e9da09;
+    margin-bottom: 50px;
+    margin-left: auto;
+    background-image: url(./sunflowers-1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.flex-item:nth-child(3n-1) {
+    width: 100%;
+    background-position: cover;
+}
+.flex-item-2 {
+    background-image: url(./sunflowers-2.jpg)
+}
+.flex-item-3 {
+    background-image: url(./sunflowers-3.jpg)
+}
+.flex-item-4 {
+    background-image: url(./sunflowers-4.jpg)
+}
+.flex-item-5 {
+    background-image: url(./sunflowers-5.jpg)
+}
+.flex-item span, .flex-item-2 span, .flex-item-3 span, .flex-item-4 span, .flex-item-5 span {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px 5px;
+}
+
+
+
 /* My Work Section End */
 
 /* Contact Section Styles */
