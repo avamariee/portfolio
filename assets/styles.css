@@ -6,9 +6,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-div {
-    padding: 20px;
+    background-color: rgba(29, 28, 18, 0.774);
 }
 /* Header & Nav Bar Styles */
 header {
@@ -21,6 +19,7 @@ header {
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
+    border-top: 4px solid black;
 }
 header h1 {
     font-size: 50px;
@@ -71,6 +70,7 @@ header nav ul li a:hover {
     background-attachment: fixed;
     padding: 10px;
     text-align: center;
+    border-bottom: 2px solid black;
 }
 .hero h1 {
     font-size: 50px;
@@ -85,6 +85,8 @@ header nav ul li a:hover {
 
 /* Section Title Styles */
 .title {  
+    display: flex;
+    flex-wrap: wrap;
     font-size: 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -101,7 +103,10 @@ header nav ul li a:hover {
     justify-content: space-around;
     flex-direction: row;
     text-align: left;
-    border: 2px solid #58f565;
+    border: 2px solid black;
+}
+.about-me p {
+    margin-top: 20px;
 }
 .about-me img {
     height: auto;
@@ -110,6 +115,11 @@ header nav ul li a:hover {
     max-height: 400px;
     float: right;
     margin-left: auto;
+    margin-right: 10px;
+}
+.about-me div {
+    padding: 2px;
+    margin-left: 60px;
 }
 /* About Me Section End */
 
@@ -118,10 +128,12 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 2px solid #2802ff;
+    border: 2px solid black;
 }
 .flex-container > .title {
-   flex-basis: 20%;
+   flex-basis: 13.08%;
+   justify-content: space-between;
+   margin-left: 40px;
 }
 .flex-container:first-child {
     flex-basis: 100%;
@@ -130,10 +142,12 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     flex: 1;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-position: cover;
+    margin-right: 10px;
 }
 .flex-imgs > div {
-    width: calc(50% - 5px);
+    width: calc(45% - 10px);
     height: 300px;
     margin-top: 10px;
 
@@ -145,21 +159,21 @@ div.flex-item {
     background-size: cover;
     background-position: center;
 }
-.flex-item:nth-child(3n-1) {
-    width: 100%;
-    background-position: cover;
-}
 .flex-item-2 {
-    background-image: url(./sunflowers-2.jpg)
+    background-image: url(./sunflowers-2.jpg);
+    background-size: cover;
 }
 .flex-item-3 {
-    background-image: url(./sunflowers-3.jpg)
+    background-image: url(./sunflowers-3.jpg);
+    background-size: cover;
 }
 .flex-item-4 {
-    background-image: url(./sunflowers-4.jpg)
+    background-image: url(./sunflowers-4.jpg);
+    background-size: cover;
 }
 .flex-item-5 {
-    background-image: url(./sunflowers-5.jpg)
+    background-image: url(./sunflowers-5.jpg);
+    background-size: cover;
 }
 .flex-item span, .flex-item-2 span, .flex-item-3 span, .flex-item-4 span, .flex-item-5 span {
     display: flex;
@@ -168,23 +182,25 @@ div.flex-item {
     padding: 10px 5px;
 }
 
-
-
 /* My Work Section End */
 
 /* Contact Section Styles */
 .contact {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
-    text-align: left;
-    border: 2px solid rgba(255, 0, 0, 0.533);
+    text-align: center;
+    border: 2px solid black;
+}
+.contact h2 {
+    font-size: 40px;
+    margin-right: 40px;
 }
 /* Contact Section End */
 
 /* Footer Styles */
 footer {
     text-align: center;
+    border: 2px solid black;
 }
 /* Footer Styles End */
 
