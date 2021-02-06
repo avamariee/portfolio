@@ -205,29 +205,24 @@ div.flex-item {
     border: 2px solid black;
     color: white;
 }
-.contact > .title {
-    display: flex;
-    justify-content: left;
- }
 .contact h2 {
     font-size: 40px;
     margin-right: 40px;
 }
-.contact p {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 35px;
-}
 .contact a {
     text-decoration: none;
-    align-content: center;
     color: white;
+    font-size: 30px;
     border-bottom: 2px solid rgb(228, 176, 4, 0.658);
 }
 .contact a:hover {
     background: rgb(228, 176, 4, 0.658); 
     color: black;
+}
+.contact-s {
+    display: flex;
+    align-items: center;
+
 }
 /* Contact Section End */
 
@@ -250,14 +245,41 @@ footer {
         border-right: none;
         border-bottom: 3px solid rgb(228, 176, 4, 0.658);
     }
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
-
-
+    .flex-container span{
+        padding: 180px 5px;
+        font-size: 20px;
+        color: white;
+        font-weight: bolder;
+        border: 2px solid rgb(228, 176, 4, 0.658);
+    }
 }
 
 @media screen and (max-width: 575px){
+    .hero h1 {
+        font-size: 1vw;
+    }
+    .flex-container span{
+        padding: 189px 5px;
+    
+    }
+
+    .contact-s {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    
 
 
 }
