@@ -57,7 +57,7 @@ header nav ul li a {
     font-size: 2.00vw;
 }
 header nav ul li a:hover {
-    background:rgb(228, 176, 4);
+    background:rgb(228, 176, 4, 0.658);
     color: black;
 }
 /* End Nav Bar Styles */
@@ -90,9 +90,10 @@ header nav ul li a:hover {
     font-size: 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    border-right: 3px solid rgb(228, 176, 4);
+    border-right: 3px solid rgb(228, 176, 4, 0.658);
     padding-left: 20px;
     margin-right: 10px;
+    color: white;
 
 }
 /* Section Title Styles End */
@@ -104,6 +105,8 @@ header nav ul li a:hover {
     flex-direction: row;
     text-align: left;
     border: 2px solid black;
+    font-size: 20px;
+    color: white;
 }
 .about-me p {
     margin-top: 20px;
@@ -130,6 +133,9 @@ header nav ul li a:hover {
     justify-content: space-between;
     border: 2px solid black;
 }
+.flex-container a {
+    text-decoration: none;
+}
 .flex-container > .title {
    flex-basis: 13.08%;
    justify-content: space-between;
@@ -137,6 +143,20 @@ header nav ul li a:hover {
 }
 .flex-container:first-child {
     flex-basis: 100%;
+}
+.flex-container span{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(27, 14, 6, 0.658);
+    padding: 176px 5px;
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+}
+.flex-container span:hover{
+    background:rgb(228, 176, 4, 0.658);
+    color: black;
+
 }
 .flex-imgs {
     display: flex;
@@ -147,8 +167,8 @@ header nav ul li a:hover {
     margin-right: 10px;
 }
 .flex-imgs > div {
-    width: calc(45% - 10px);
-    height: 300px;
+    width: calc(50% - 10px);
+    height: 400px;
     margin-top: 10px;
 
 }
@@ -172,28 +192,40 @@ div.flex-item {
     background-size: cover;
 }
 .flex-item-5 {
-    background-image: url(./sunflowers-5.jpg);
+    background-image: url(./run-buddy.JPG);
     background-size: cover;
 }
-.flex-item span, .flex-item-2 span, .flex-item-3 span, .flex-item-4 span, .flex-item-5 span {
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    padding: 10px 5px;
-}
+
 
 /* My Work Section End */
 
 /* Contact Section Styles */
 .contact {
     display: flex;
-    flex-direction: row;
-    text-align: center;
     border: 2px solid black;
+    color: white;
+    padding: 30px;
+    justify-content: center;
 }
+.contact > .title {
+    display: flex;
+    justify-content: left;
+ }
 .contact h2 {
     font-size: 40px;
     margin-right: 40px;
+}
+.contact p {
+    display: flex;
+    justify-content: space-around;
+    font-size: 35px;
+}
+.contact a {
+    text-decoration: none;
+    align-content: center;
+    color: white;
+    border-bottom: 2px solid rgb(228, 176, 4, 0.658);
+    
 }
 /* Contact Section End */
 
@@ -201,6 +233,7 @@ div.flex-item {
 footer {
     text-align: center;
     border: 2px solid black;
+    color: white;
 }
 /* Footer Styles End */
 
