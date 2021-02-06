@@ -7,3 +7,5 @@ This is my first personal portfolio, created with HTML and CSS.
 >
 > This website also has media queries to resize objects to fit smaller screens.
 
+![A screenshot of the webpage's header, about me, and first project.](website.JPG)
+
