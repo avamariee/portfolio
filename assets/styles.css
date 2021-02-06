@@ -37,7 +37,6 @@ header a {
     font-weight: bold;
     border-radius: 30px;
     margin: 5px;
-    
 }
 header nav ul {
     display: flex;
@@ -91,10 +90,13 @@ header nav ul li a:hover {
     letter-spacing: 2px;
     text-transform: uppercase;
     border-right: 3px solid rgb(228, 176, 4, 0.658);
-    padding-left: 20px;
+    padding-left: 0px;
     margin-right: 10px;
+    flex-basis: 14.32%;
     color: white;
-
+}
+.title h2 {
+    padding: 1em 0.5em;
 }
 /* Section Title Styles End */
 
@@ -108,21 +110,24 @@ header nav ul li a:hover {
     font-size: 20px;
     color: white;
 }
+.about-me * {
+    padding: 1em 0.5em;
+    
+}
 .about-me p {
-    margin-top: 20px;
+    margin-top: 10px;
+    padding: 10px;
 }
 .about-me img {
     height: auto;
     width: auto;
     max-width: 300px;
-    max-height: 400px;
-    float: right;
-    margin-left: auto;
+    max-height: 320px;
     margin-right: 10px;
 }
 .about-me div {
     padding: 2px;
-    margin-left: 60px;
+    /* margin-left: 60px; */
 }
 /* About Me Section End */
 
@@ -136,11 +141,6 @@ header nav ul li a:hover {
 .flex-container a {
     text-decoration: none;
 }
-.flex-container > .title {
-   flex-basis: 13.08%;
-   justify-content: space-between;
-   margin-left: 40px;
-}
 .flex-container:first-child {
     flex-basis: 100%;
 }
@@ -152,6 +152,7 @@ header nav ul li a:hover {
     font-size: 40px;
     color: white;
     font-weight: bolder;
+    border: 2px solid rgb(228, 176, 4, 0.658);
 }
 .flex-container span:hover{
     background:rgb(228, 176, 4, 0.658);
@@ -170,7 +171,7 @@ header nav ul li a:hover {
     width: calc(50% - 10px);
     height: 400px;
     margin-top: 10px;
-
+    margin-bottom: 10px;
 }
 div.flex-item {
     height: 400px;
@@ -196,7 +197,6 @@ div.flex-item {
     background-size: cover;
 }
 
-
 /* My Work Section End */
 
 /* Contact Section Styles */
@@ -204,8 +204,6 @@ div.flex-item {
     display: flex;
     border: 2px solid black;
     color: white;
-    padding: 30px;
-    justify-content: center;
 }
 .contact > .title {
     display: flex;
@@ -218,6 +216,7 @@ div.flex-item {
 .contact p {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     font-size: 35px;
 }
 .contact a {
@@ -225,7 +224,10 @@ div.flex-item {
     align-content: center;
     color: white;
     border-bottom: 2px solid rgb(228, 176, 4, 0.658);
-    
+}
+.contact a:hover {
+    background: rgb(228, 176, 4, 0.658); 
+    color: black;
 }
 /* Contact Section End */
 
@@ -240,7 +242,22 @@ footer {
 /* Media Queries For Smaller Screens */
 
 @media screen and (max-width: 980px) {
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        border-right: none;
+        border-bottom: 3px solid rgb(228, 176, 4, 0.658);
+    }
+}
+
+@media screen and (max-width: 768px) {
 
 
 }
 
+@media screen and (max-width: 575px){
+
+
+}
