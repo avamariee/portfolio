@@ -4,9 +4,8 @@
     padding: 0;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(29, 28, 18, 0.774);
+    font-family: 'Marmelad', sans-serif;
+        background-color: rgba(29, 28, 18, 0.774);
 }
 /* Header & Nav Bar Styles */
 header {
@@ -15,7 +14,7 @@ header {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    background-image: url(../assets/sunflower-banner.jpg);
+    background-image: url(/assets/images/sunflower-banner.jpg);
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
@@ -23,6 +22,7 @@ header {
 }
 header h1 {
     font-size: 50px;
+    font-family: 'Pacifico', cursive;
     font-weight: bold;
     color: white;
     background-color:rgba(27, 14, 6, 0.658);
@@ -63,7 +63,7 @@ header nav ul li a:hover {
 
 /* Hero Styles */
 .hero {
-    background-image: url(../assets/sunflower-banner.jpg);
+    background-image: url(/assets/images/sunflower-banner.jpg);
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
@@ -176,24 +176,24 @@ header nav ul li a:hover {
 div.flex-item {
     height: 400px;
     flex-basis: 100%;
-    background-image: url(./sunflowers-1.jpg);
+    background-image: url(/assets/images/sunflowers-1.jpg);
     background-size: cover;
     background-position: center;
 }
 .flex-item-2 {
-    background-image: url(./sunflowers-2.jpg);
+    background-image: url(/assets/images/dogs-vs-cats.JPG);
     background-size: cover;
 }
 .flex-item-3 {
-    background-image: url(./sunflowers-3.jpg);
+    background-image: url(/assets/images/weather-dashboard.jpg);
     background-size: cover;
 }
 .flex-item-4 {
-    background-image: url(./sunflowers-4.jpg);
+    background-image: url(/assets/images/work-day-scheduler.jpg);
     background-size: cover;
 }
 .flex-item-5 {
-    background-image: url(./run-buddy.JPG);
+    background-image: url(/assets/images/run-buddy.JPG);
     background-size: cover;
 }
 
