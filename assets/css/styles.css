@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    background-image: url(/assets/images/sunflower-banner.jpg);
+    background-image: url(../images/sunflower-banner.jpg);
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
@@ -63,7 +63,7 @@ header nav ul li a:hover {
 
 /* Hero Styles */
 .hero {
-    background-image: url(/assets/images/sunflower-banner.jpg);
+    background-image: url(../images/sunflower-banner.jpg);
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
@@ -176,24 +176,24 @@ header nav ul li a:hover {
 div.flex-item {
     height: 400px;
     flex-basis: 100%;
-    background-image: url(/assets/images/sunflowers-1.jpg);
+    background-image: url(../images/sunflowers-1.jpg);
     background-size: cover;
     background-position: center;
 }
 .flex-item-2 {
-    background-image: url(/assets/images/dogs-vs-cats.JPG);
+    background-image: url(../images/dogs-vs-cats.JPG);
     background-size: cover;
 }
 .flex-item-3 {
-    background-image: url(/assets/images/weather-dashboard.jpg);
+    background-image: url(../images/weather-dashboard.jpg);
     background-size: cover;
 }
 .flex-item-4 {
-    background-image: url(/assets/images/work-day-scheduler.jpg);
+    background-image: url(../images/work-day-scheduler.jpg);
     background-size: cover;
 }
 .flex-item-5 {
-    background-image: url(/assets/images/run-buddy.JPG);
+    background-image: url(../images/run-buddy.JPG);
     background-size: cover;
 }
 
